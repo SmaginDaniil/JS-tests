@@ -1,0 +1,30 @@
+{
+  "name": "js-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter mochawesome",
+    "coverage": "c8 mocha --reporter mochawesome && c8 report --reporter=html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmaginDaniil/JS-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmaginDaniil/JS-tests/issues"
+  },
+  "homepage": "https://github.com/SmaginDaniil/JS-tests#readme",
+  "devDependencies": {
+    "c8": "^10.1.3",
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0",
+    "mochawesome": "^7.1.3"
+  }
+}
