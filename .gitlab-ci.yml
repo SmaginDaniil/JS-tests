@@ -1,0 +1,13 @@
+stages:
+  - lint
+
+lint:
+  stage: lint
+  image: node:20
+  script:
+    - npm ci
+    - npx eslint .
+  only:
+    - merge_requests
+    - master
+    - main
